@@ -13,9 +13,9 @@ textarea:focus {
   outline: none;
 }
 .button {
-  background-color: #f1690e;
+  background-color: #ffe547;
   font-size: 1.2rem;
-  color: white;
+  color: #1e1e1e;
   padding: 1rem 3rem;
   border-radius: 8px;
   text-transform: uppercase;
@@ -24,7 +24,7 @@ textarea:focus {
 }
 .button:hover {
   cursor: pointer;
-  background-color: #d95e0d;
+  background-color: #ffe12d;
 }
 .form {
   /*input field*/
@@ -47,7 +47,6 @@ textarea:focus {
   transform: translateX(-50%) translateY(-50%);
   padding: 0.5rem;
   font-size: 1.3rem;
-  background-color: white;
 }
 .form-btn {
   display: block;
@@ -76,11 +75,14 @@ section {
 /*main*/
 .main {
   padding: 3rem 5rem;
-  background: #fff url(../img/main.png) center center no-repeat;
+  background: #fff;
   background-size: cover;
   /*subtitle*/
   /*green label*/
   /*main form*/
+}
+.main-logo {
+  line-height: 8rem;
 }
 .main-logo img {
   display: inline-block;
@@ -117,8 +119,9 @@ section {
   padding: 3rem 5rem;
   font-size: 1.8rem;
   text-align: center;
-  background-color: #036303;
-  color: white;
+  background-color: #fff;
+  border: 2px solid #1e1e1e;
+  color: #1e1e1e;
   /*number 300*/
 }
 .main span strong {
@@ -132,7 +135,7 @@ section {
 }
 .main-form {
   padding: 4rem 5rem;
-  background-color: white;
+  background-color: #edf0f6;
   text-align: center;
   /*heading form*/
 }
@@ -161,13 +164,16 @@ section {
 }
 .phone-link {
   display: inline-block;
-  color: #222121;
+  color: #1e1e1e;
   font-weight: 900;
   font-size: 2rem;
   height: 7rem;
   line-height: 7rem;
 }
 /*Features section*/
+.features {
+  background-color: #edf0f6;
+}
 .features-block {
   text-align: center;
 }
@@ -213,7 +219,7 @@ section {
 }
 /*Prices section*/
 .price {
-  background: #036303;
+  background-color: #fff;
 }
 .price-button {
   text-align: right;
@@ -263,7 +269,7 @@ section {
 }
 /*Feedback section*/
 .feedback {
-  background-color: #f0efeb;
+  background-color: #edf0f6;
   background-size: cover;
 }
 .feedback-prev-btn {
@@ -306,7 +312,7 @@ section {
   transform: translateY(-50%);
   width: 5rem;
   height: 5rem;
-  background-color: #036303;
+  background-color: #ffe547;
   border: none;
 }
 .feedback-slider-btn img {
@@ -351,7 +357,7 @@ section {
 }
 /*All inclusive*/
 .all-inclusive {
-  background-color: #f0efeb;
+  background-color: #edf0f6;
 }
 .all-inclusive .media {
   min-height: 8rem;
@@ -367,7 +373,7 @@ section {
 }
 .circle {
   display: inline-block;
-  background-color: #036303;
+  background-color: #ffe547;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -377,11 +383,11 @@ section {
   width: 5rem;
   height: 5rem;
   padding: 0.3rem;
-  border: 2px solid #036303;
+  border: 2px solid #1e1e1e;
   border-radius: 50%;
   text-align: center;
   line-height: 4rem;
-  color: #fff;
+  color: #1e1e1e;
   font-weight: 900;
   font-size: 1.6rem;
 }
@@ -426,13 +432,16 @@ section {
   background-size: 70%;
 }
 .problems-list_good {
-  border-color: #036303;
+  border-color: #ffe547;
 }
 .problems-list_good ul li:before {
   background: url(../img/problems/icons8-галочка-48.png) no-repeat center;
   background-size: 70%;
 }
 /*Materials*/
+.materials {
+  background-color: #edf0f6;
+}
 .materials-slider {
   padding-top: 5rem;
 }
@@ -456,14 +465,17 @@ section {
 }
 /*How we works*/
 .tour {
-  background-color: #f0efeb;
+  background-color: #fff;
 }
 .tour-subtitle {
   font-size: 2.2rem;
 }
 /*Upsell*/
 .upsell {
-  background: #036303;
+  background: #edf0f6;
+}
+.upsell .section-header h2 {
+  color: #1e1e1e;
 }
 .upsell-block {
   min-height: 15rem;
@@ -483,8 +495,8 @@ section {
 }
 .contacts-link {
   display: inline-block;
-  color: #222121;
-  border-bottom: 1px dotted #222121;
+  color: #1e1e1e;
+  border-bottom: 1px dotted #1e1e1e;
 }
 .contacts-link:hover {
   color: #000000;
@@ -496,6 +508,8 @@ section {
 /*Footer*/
 footer {
   padding: 4rem 0;
+  background-color: black;
+  color: #fff;
 }
 .footer-contacts {
   text-align: center;

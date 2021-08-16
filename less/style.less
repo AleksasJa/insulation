@@ -1,7 +1,7 @@
 /*Colors*/
-@btn-color: rgb(241, 105, 14);
+@btn-color: #ffe547;
 @icons-color: rgb(3, 99, 3);
-@text: rgb(34, 33, 33);
+@text: #1e1e1e;
 @danger: red;
 @bg-light: gray;
 @border-input: #dddddd;
@@ -22,7 +22,7 @@ button, input, a, textarea {
 .button {
     background-color: @btn-color;
     font-size: 1.2rem;
-    color: white;
+    color: @text;
     padding: 1rem 3rem;
     border-radius: 8px;
     text-transform: uppercase;
@@ -51,7 +51,7 @@ button, input, a, textarea {
         transform: translateX(-50%) translateY(-50%);
         padding: 0.5rem;
         font-size: 1.3rem;
-        background-color: white;
+        //background-color: white;
     }
     /*button in form*/
     &-btn {
@@ -83,9 +83,10 @@ section {
 /*main*/
 .main {
     padding: 3rem 5rem;
-    background: #fff url(../img/main.png) center center no-repeat;
+    background: #fff;
     background-size: cover;
     &-logo {
+        line-height: 8rem;
         img{
             display: inline-block;
             margin-top: 0rem;
@@ -125,8 +126,9 @@ section {
         padding: 3rem 5rem;
         font-size: 1.8rem;
         text-align: center;
-        background-color: @icons-color;
-        color: white;
+        background-color: #fff;
+        border: 2px solid @text;
+        color: @text;
         /*number 300*/
         strong {
             font-size: 3rem;
@@ -141,7 +143,7 @@ section {
     /*main form*/
     &-form {
         padding: 4rem 5rem;
-        background-color: white;
+        background-color: #edf0f6;
         text-align: center;
         /*heading form*/
         &-header {
@@ -188,6 +190,7 @@ section {
 }
 /*Features section*/
 .features {
+    background-color: #edf0f6;
     &-block {
         text-align: center;
         h3 {
@@ -236,10 +239,11 @@ section {
 
 /*Prices section*/
 .price {
+    background-color: #fff;
     &-button {
         text-align: right;
     }
-    background: @icons-color;
+    //background: @icons-color;
     &-header-btn {
         margin-top: 4rem;
     }
@@ -289,7 +293,7 @@ section {
 
 /*Feedback section*/
 .feedback {
-    background-color: #f0efeb;
+    background-color: #edf0f6;
     background-size: cover;
     &-prev-btn{
         left: -5rem;
@@ -330,7 +334,7 @@ section {
             transform: translateY(-50%);
             width: 5rem;
             height: 5rem;
-            background-color: @icons-color;
+            background-color: #ffe547;
             border: none;
             img{
                 width: 50%;
@@ -380,7 +384,7 @@ section {
 
 /*All inclusive*/
 .all-inclusive {
-    background-color: #f0efeb;
+    background-color: #edf0f6;
     .media {
         min-height: 8rem;
         font-size: 1.3rem;
@@ -397,7 +401,7 @@ section {
 }
  .circle {
      display: inline-block;
-     background-color: @icons-color;
+     background-color: #ffe547;
      width: 100%;
      height: 100%;
      border-radius: 50%;
@@ -406,11 +410,11 @@ section {
          width: 5rem;
          height: 5rem;
          padding: 0.3rem;
-         border: 2px solid @icons-color;
+         border: 2px solid #1e1e1e;
          border-radius: 50%;
          text-align: center;
          line-height: 4rem;
-         color: #fff;
+         color: #1e1e1e;
          font-weight: 900;
          font-size: 1.6rem;
      }
@@ -457,7 +461,7 @@ section {
             }
         }
         &_good {
-            border-color: @icons-color;
+            border-color: #ffe547;
             ul li:before {
                 background: url(../img/problems/icons8-галочка-48.png) no-repeat center;
                 background-size: 70%;
@@ -468,6 +472,7 @@ section {
 
 /*Materials*/
 .materials {
+    background-color: #edf0f6;
     &-slider {
         padding-top: 5rem;
     }
@@ -493,7 +498,7 @@ section {
 
 /*How we works*/
 .tour {
-    background-color: #f0efeb;
+    background-color: #fff;
     &-subtitle {
         font-size: 2.2rem;
     }
@@ -501,7 +506,12 @@ section {
 
 /*Upsell*/
 .upsell {
-    background: @icons-color;
+    background: #edf0f6;
+    .section-header {
+        h2 {
+            color: #1e1e1e;
+        }
+    }
     &-block {
         min-height: 15rem;
         text-align: center;
@@ -540,6 +550,8 @@ section {
 /*Footer*/
 footer {
     padding: 4rem 0;
+    background-color: black;
+    color: #fff;
 }
 .footer {
     &-contacts {
