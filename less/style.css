@@ -1,7 +1,24 @@
 /*Colors*/
 /*Basic settings*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 html {
   font-size: 10px;
+  font-family: 'Gill Sans', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+html body {
+  overflow-x: hidden;
+}
+body {
+  width: 100vw;
+}
+a {
+  text-decoration: none;
+  color: #1e1e1e;
 }
 a:hover {
   text-decoration: none;
@@ -15,6 +32,7 @@ textarea:focus {
 .button {
   background-color: #ffe547;
   font-size: 1.2rem;
+  font-weight: 700;
   color: #1e1e1e;
   padding: 1rem 3rem;
   border-radius: 8px;
@@ -71,10 +89,13 @@ section {
 }
 .section-header p {
   font-size: 1.4rem;
+  color: #1e1e1e;
 }
 /*main*/
 .main {
-  padding: 3rem 5rem;
+  position: relative;
+  width: 100vw;
+  min-height: 1px;
   background: #fff;
   background-size: cover;
   /*subtitle*/
@@ -100,7 +121,6 @@ section {
   text-align: right;
 }
 .main-content {
-  margin-top: 10rem;
   /*main heading*/
 }
 .main-content h1 {
@@ -108,6 +128,10 @@ section {
   margin-bottom: 2rem;
   font-size: 4rem;
   line-height: 1.45;
+  font-weight: 900;
+  line-height: 4rem;
+}
+.main-content h1 span {
   text-transform: uppercase;
 }
 .main-subtitle {
@@ -149,9 +173,6 @@ section {
 .main-form small {
   display: block;
   margin-top: 1.5rem;
-}
-.header {
-  height: 7rem;
 }
 .wrap {
   display: table;
@@ -239,12 +260,45 @@ section {
   font-size: 1.6rem;
   font-weight: 900;
 }
-.price-block img {
+.price-block_category {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-rows: repeat(auto-fill, 110px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 0 0 3rem 0;
+}
+.price-block_category article {
+  position: relative;
+  background-color: #edf0f6;
+  min-height: 110px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.price-block_category article img {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  height: 120px;
+  width: 120px;
+}
+.price-block_category article a {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 30rem;
-  display: inline-block;
-  margin-bottom: 2rem;
-  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  cursor: pointer;
+  padding: 0 90px 0 20px;
+}
+.price-block_category article a h3 {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  font-weight: 500;
 }
 .price-list {
   padding: 0;
@@ -438,28 +492,42 @@ section {
   background: url(../img/problems/icons8-галочка-48.png) no-repeat center;
   background-size: 70%;
 }
-/*Materials*/
-.materials {
+/*Sertificate*/
+.certificate {
   background-color: #edf0f6;
 }
-.materials-slider {
+.certificate-slider {
   padding-top: 5rem;
 }
-.materials-link {
+.certificate-slider .sertificate-block {
+  position: relative;
+}
+.certificate-slider .sertificate-block .second-img {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+.certificate-slider .sertificate-block .third-img {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+}
+.certificate-slider .sertificate-block h3 {
+  margin-top: 8rem;
+  text-align: center;
+}
+.certificate-link {
   color: #036303;
   border-bottom: 1px dotted #036303;
 }
-.materials-link:hover {
+.certificate-link:hover {
   color: #000000;
 }
-.materials img {
+.certificate img {
   display: block;
   margin: 0 auto;
 }
-.materials h3 {
-  margin-top: 3rem;
-}
-.materials-offer {
+.certificate-offer {
   margin-top: 4rem;
   text-align: center;
 }
@@ -485,6 +553,11 @@ section {
 .upsell-block img {
   border-radius: 10px;
 }
+.upsell-block p {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #1e1e1e;
+}
 /*Contacts*/
 .contacts h2 {
   font-weight: 900;
@@ -508,8 +581,15 @@ section {
 /*Footer*/
 footer {
   padding: 4rem 0;
-  background-color: black;
+  background-color: #edf0f6;
   color: #fff;
+}
+footer address {
+  color: #1e1e1e;
+}
+footer address p {
+  margin: 0;
+  line-height: 2.4rem;
 }
 .footer-contacts {
   text-align: center;
@@ -558,18 +638,88 @@ footer {
 .popup-header {
   font-weight: 900;
 }
+@media (max-width: 400px) {
+  .main .phone-block {
+    margin: 0;
+    text-align: left;
+  }
+  .main-subtitle {
+    line-height: 2.4rem;
+  }
+  .main-content .main-title {
+    text-align: left;
+  }
+  .main-content .main-title h1 {
+    font-size: 3.6rem;
+  }
+  .main-content .main-title h1 span {
+    display: block;
+  }
+  .main-content .main-form {
+    margin-bottom: 3rem;
+  }
+  .price-block h4 {
+    text-align: left;
+  }
+  .section-header {
+    text-align: left;
+  }
+  .section-header p {
+    font-size: 1.8rem;
+  }
+}
+.features-img {
+  margin-bottom: 0rem;
+}
+.features-block p {
+  font-size: 1.8rem;
+}
+.scheme .container p {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+}
+.all-inclusive .media-body h3 {
+  font-size: 2rem;
+}
+.all-inclusive .media-body p {
+  font-size: 1.5rem;
+}
+.problems-list h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.problems-list ul {
+  font-size: 1.4rem;
+}
+.certificate-slider .sertificate-block h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.upsell .section-header p {
+  margin-bottom: 3rem;
+}
+.upsell-block p {
+  margin-bottom: 3rem;
+}
+.contacts p {
+  font-size: 1.8rem;
+}
+footer .footer-logo {
+  margin-bottom: 3rem;
+}
+footer p {
+  font-size: 1.8rem;
+}
+footer .text-bold {
+  font-weight: 500;
+}
 @media (max-width: 767px) {
   .phone-block {
     text-align: center;
     margin-right: 5rem;
   }
-  .main-content {
-    margin-bottom: 3rem;
-    margin-top: 15rem;
-  }
   .main-title {
     padding-bottom: 3rem;
-    text-align: center;
   }
   .feedback-prev-btn {
     left: 0rem;
@@ -594,7 +744,6 @@ footer {
   }
   .main-title {
     padding-bottom: 3rem;
-    text-align: center;
   }
   .phone-block {
     text-align: center;
