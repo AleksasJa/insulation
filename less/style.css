@@ -504,13 +504,9 @@ section {
 }
 .certificate-slider .sertificate-block .second-img {
   position: absolute;
-  top: 30px;
-  left: 100px;
 }
 .certificate-slider .sertificate-block .third-img {
   position: absolute;
-  top: 60px;
-  left: 100px;
 }
 .certificate-slider .sertificate-block h3 {
   margin-top: 8rem;
@@ -667,51 +663,148 @@ footer address p {
   .section-header p {
     font-size: 1.8rem;
   }
+  .features-img {
+    margin-bottom: 0rem;
+  }
+  .features-block p {
+    font-size: 1.8rem;
+  }
+  .scheme .container p {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+  }
+  .all-inclusive .media-body h3 {
+    font-size: 2rem;
+  }
+  .all-inclusive .media-body p {
+    font-size: 1.5rem;
+  }
+  .problems-list h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .problems-list ul {
+    font-size: 1.4rem;
+  }
+  .certificate-slider .sertificate-block .first-img {
+    width: 80%;
+  }
+  .certificate-slider .sertificate-block .second-img {
+    top: 5%;
+    left: 25%;
+  }
+  .certificate-slider .sertificate-block .third-img {
+    top: 10%;
+    left: 35%;
+  }
+  .certificate-slider .sertificate-block h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .upsell .section-header p {
+    margin-bottom: 3rem;
+  }
+  .upsell-block p {
+    margin-bottom: 3rem;
+  }
+  .contacts p {
+    font-size: 1.8rem;
+  }
+  footer .footer-logo {
+    margin-bottom: 3rem;
+  }
+  footer p {
+    font-size: 1.8rem;
+  }
+  footer .text-bold {
+    font-weight: 500;
+  }
 }
-.features-img {
-  margin-bottom: 0rem;
-}
-.features-block p {
-  font-size: 1.8rem;
-}
-.scheme .container p {
-  margin-bottom: 3rem;
-  font-size: 1.4rem;
-}
-.all-inclusive .media-body h3 {
-  font-size: 2rem;
-}
-.all-inclusive .media-body p {
-  font-size: 1.5rem;
-}
-.problems-list h3 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-.problems-list ul {
-  font-size: 1.4rem;
-}
-.certificate-slider .sertificate-block h3 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-.upsell .section-header p {
-  margin-bottom: 3rem;
-}
-.upsell-block p {
-  margin-bottom: 3rem;
-}
-.contacts p {
-  font-size: 1.8rem;
-}
-footer .footer-logo {
-  margin-bottom: 3rem;
-}
-footer p {
-  font-size: 1.8rem;
-}
-footer .text-bold {
-  font-weight: 500;
+@media (min-width: 401px) and (max-width: 500px) {
+  .main .phone-block {
+    margin: 0;
+    text-align: left;
+  }
+  .main-subtitle {
+    line-height: 2.4rem;
+  }
+  .main-content .main-title {
+    text-align: left;
+  }
+  .main-content .main-title h1 {
+    font-size: 3.6rem;
+  }
+  .main-content .main-title h1 span {
+    display: block;
+  }
+  .main-content .main-form {
+    margin-bottom: 3rem;
+  }
+  .price-block h4 {
+    text-align: left;
+  }
+  .section-header {
+    text-align: left;
+  }
+  .section-header p {
+    font-size: 1.8rem;
+  }
+  .features-img {
+    margin-bottom: 0rem;
+  }
+  .features-block p {
+    font-size: 1.8rem;
+  }
+  .scheme .container p {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+  }
+  .all-inclusive .media-body h3 {
+    font-size: 2rem;
+  }
+  .all-inclusive .media-body p {
+    font-size: 1.5rem;
+  }
+  .problems-list h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .problems-list ul {
+    font-size: 1.4rem;
+  }
+  .certificate-slider .sertificate-block .first-img {
+    width: 90%;
+  }
+  .certificate-slider .sertificate-block .second-img {
+    top: 5%;
+    left: 35%;
+  }
+  .certificate-slider .sertificate-block .third-img {
+    top: 10%;
+    left: 45%;
+  }
+  .certificate-slider .sertificate-block h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .upsell .section-header p {
+    margin-bottom: 3rem;
+  }
+  .upsell-block p {
+    margin-bottom: 3rem;
+  }
+  .contacts p {
+    font-size: 1.8rem;
+  }
+  footer .footer-logo {
+    margin-bottom: 3rem;
+  }
+  footer p {
+    font-size: 1.8rem;
+  }
+  footer .text-bold {
+    font-weight: 500;
+  }
 }
 @media (max-width: 767px) {
   .phone-block {

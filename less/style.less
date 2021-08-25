@@ -532,13 +532,9 @@ section {
             position: relative;
             .second-img {
                 position: absolute;
-                top: 30px;
-                left: 100px;
             }
             .third-img {
                 position: absolute;
-                top: 60px;
-                left: 100px;
             }
             h3 {
                 margin-top: 8rem;
@@ -718,7 +714,6 @@ footer {
             font-size: 1.8rem;
         }
     }
-}
 .features {
     &-img {
         margin-bottom: 0rem;
@@ -764,10 +759,22 @@ footer {
     &-slider {
         .sertificate {
             &-block {
+                .first-img {
+                    width: 80%;
+                }
+                .second-img {
+                    top: 5%;
+                    left: 25%;
+                }
+                .third-img {
+                    top: 10%;
+                    left: 35%;
+                }
                 h3 {
                     font-size: 2rem;
                     font-weight: 500;
                 }
+
             }
         }
     }
@@ -799,9 +806,136 @@ footer {
     .text-bold {
         font-weight: 500;
     }
+ }
 }
-@media(max-width: 500px){
-    
+@media(min-width: 401px) and (max-width: 500px){
+    .main {
+        .phone-block {
+            margin: 0;
+            text-align: left;
+        }
+        &-subtitle {
+            line-height: 2.4rem;
+        }
+    }
+    .main-content {
+        .main-title {
+            text-align: left;
+            h1 {
+                font-size: 3.6rem;
+                span {
+                    display: block;
+                }
+            }
+        }
+        .main-form {
+            margin-bottom: 3rem;
+        }
+    }
+    .price-block {
+        h4 {
+            text-align: left;
+        }
+    }
+    .section-header {
+        text-align: left;
+        p {
+            font-size: 1.8rem;
+        }
+    }
+.features {
+    &-img {
+        margin-bottom: 0rem;
+    }
+    &-block {
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
+.scheme {
+    .container {
+    p {
+        margin-bottom: 3rem;
+        font-size: 1.4rem;
+    }
+  }
+}
+.all-inclusive {
+    .media {
+        &-body {
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+.problems {
+    &-list {
+        h3 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        ul {
+            font-size: 1.4rem;
+        }
+    }
+}
+.certificate {
+    &-slider {
+        .sertificate {
+            &-block {
+                .first-img {
+                    width: 90%;
+                }
+                .second-img {
+                    top: 5%;
+                    left: 35%;
+                }
+                .third-img {
+                    top: 10%;
+                    left: 45%;
+                }
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    }
+}
+.upsell {
+    .section-header {
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+    &-block {
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+}
+.contacts {
+    p {
+        font-size: 1.8rem;
+    }
+}
+footer {
+    .footer-logo {
+        margin-bottom: 3rem;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+    .text-bold {
+        font-weight: 500;
+    }
+ }
 }
 @media(max-width: 576px){
     
