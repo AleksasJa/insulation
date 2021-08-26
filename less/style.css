@@ -806,7 +806,7 @@ footer address p {
     font-weight: 500;
   }
 }
-@media (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 767px) {
   .phone-block {
     text-align: center;
     margin-right: 5rem;
@@ -831,7 +831,7 @@ footer address p {
     min-height: auto;
   }
 }
-@media (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .main-title h1 {
     font-size: 3rem;
   }
@@ -855,7 +855,7 @@ footer address p {
     margin-bottom: 0;
   }
 }
-@media (max-width: 1190px) {
+@media (min-width: 993px) and (max-width: 1190px) {
   .wrap {
     margin-right: 100rem;
   }
