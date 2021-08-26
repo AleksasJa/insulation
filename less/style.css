@@ -654,6 +654,9 @@ footer address p {
   .main-content .main-form {
     margin-bottom: 3rem;
   }
+  .price-block {
+    margin-bottom: 3rem;
+  }
   .price-block h4 {
     text-align: left;
   }
@@ -740,6 +743,9 @@ footer address p {
   .main-content .main-form {
     margin-bottom: 3rem;
   }
+  .price-block {
+    margin-bottom: 3rem;
+  }
   .price-block h4 {
     text-align: left;
   }
@@ -782,6 +788,78 @@ footer address p {
   .certificate-slider .sertificate-block .third-img {
     top: 10%;
     left: 45%;
+  }
+  .certificate-slider .sertificate-block h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .upsell .section-header p {
+    margin-bottom: 3rem;
+  }
+  .upsell-block p {
+    margin-bottom: 3rem;
+  }
+  .contacts p {
+    font-size: 1.8rem;
+  }
+  footer .footer-logo {
+    margin-bottom: 3rem;
+  }
+  footer p {
+    font-size: 1.8rem;
+  }
+  footer .text-bold {
+    font-weight: 500;
+  }
+}
+@media (min-width: 501px) and (max-width: 576px) {
+  .section-header {
+    text-align: left;
+  }
+  .section-header p {
+    font-size: 1.8rem;
+  }
+  .main .phone-block {
+    margin: 0;
+    text-align: left;
+  }
+  .main-subtitle {
+    margin-bottom: 3rem;
+    line-height: 2.4rem;
+  }
+  .main-form {
+    margin-bottom: 3rem;
+  }
+  .features-block p {
+    font-size: 1.8rem;
+  }
+  .price-block {
+    margin-bottom: 3rem;
+  }
+  .price-block h4 {
+    text-align: left;
+  }
+  .scheme p {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+  .problems-list h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .problems-list ul {
+    font-size: 1.4rem;
+  }
+  .certificate-slider .sertificate-block .first-img {
+    width: 90%;
+  }
+  .certificate-slider .sertificate-block .second-img {
+    top: 5%;
+    left: 35%;
+  }
+  .certificate-slider .sertificate-block .third-img {
+    top: 10%;
+    left: 42%;
   }
   .certificate-slider .sertificate-block h3 {
     font-size: 2rem;
