@@ -30,15 +30,19 @@ textarea:focus {
   outline: none;
 }
 .button {
+  display: inline-block;
   background-color: #ffe547;
   font-size: 1.2rem;
   font-weight: 700;
   color: #1e1e1e;
   padding: 1rem 3rem;
-  border-radius: 8px;
+  border-radius: 6px;
   text-transform: uppercase;
   border: none;
   transition: all 0.2s;
+  user-select: none;
+  letter-spacing: 0.08rem;
+  cursor: pointer;
 }
 .button:hover {
   cursor: pointer;
@@ -91,7 +95,7 @@ section {
   font-size: 1.4rem;
   color: #1e1e1e;
 }
-/*main*/
+/*Main*/
 .main {
   position: relative;
   width: 100vw;
@@ -102,37 +106,33 @@ section {
   /*green label*/
   /*main form*/
 }
-.main-logo {
-  line-height: 8rem;
+.main .header-top {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 3rem 0 2rem 0;
 }
-.main-logo img {
+.main .header-top .main-logo {
+  flex-grow: 1;
+  width: 129px;
+  margin-top: -0.5rem;
+}
+.main .header-top .main-logo .header-top_logo {
   display: inline-block;
-  margin-top: 0rem;
+  width: 12.9rem;
+  height: 4.1rem;
+  background-image: url('../img/kflex-logp.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.main-logo h2 {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  margin-left: 2rem;
-  line-height: 3rem;
-  margin-top: 1rem;
+.main .header-top .phone-block {
+  flex-grow: 0;
+  padding-bottom: 0;
 }
-.main .phone-block {
-  text-align: right;
-}
-.main-content {
-  /*main heading*/
-}
-.main-content h1 {
-  margin-top: 0px;
-  margin-bottom: 2rem;
-  font-size: 4rem;
-  line-height: 1.45;
-  font-weight: 900;
-  line-height: 4rem;
-}
-.main-content h1 span {
-  text-transform: uppercase;
+.main .header-top .phone-block a {
+  font-size: 1.5rem;
+  padding-bottom: 1px;
+  font-weight: 700;
 }
 .main-subtitle {
   margin-bottom: 1rem;
@@ -174,22 +174,8 @@ section {
   display: block;
   margin-top: 1.5rem;
 }
-.wrap {
-  display: table;
-  width: 100%;
-  height: 7rem;
-}
-.wrap-block {
-  display: table-cell;
-  vertical-align: middle;
-}
-.phone-link {
-  display: inline-block;
-  color: #1e1e1e;
-  font-weight: 900;
-  font-size: 2rem;
-  height: 7rem;
-  line-height: 7rem;
+.main-content .main-title h1 {
+  margin-bottom: 2rem;
 }
 /*Features section*/
 .features {
@@ -407,7 +393,6 @@ section {
 }
 .scheme h3 {
   font-size: 2rem;
-  font-weight: 900;
 }
 /*All inclusive*/
 .all-inclusive {
@@ -635,6 +620,12 @@ footer address p {
   font-weight: 900;
 }
 @media (max-width: 400px) {
+  .section-header {
+    text-align: left;
+  }
+  .section-header p {
+    font-size: 1.8rem;
+  }
   .main .phone-block {
     margin: 0;
     text-align: left;
@@ -659,12 +650,6 @@ footer address p {
   }
   .price-block h4 {
     text-align: left;
-  }
-  .section-header {
-    text-align: left;
-  }
-  .section-header p {
-    font-size: 1.8rem;
   }
   .features-img {
     margin-bottom: 0rem;
@@ -819,6 +804,11 @@ footer address p {
   .section-header p {
     font-size: 1.8rem;
   }
+  .main .header-top .wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
   .main .phone-block {
     margin: 0;
     text-align: left;
@@ -835,6 +825,9 @@ footer address p {
   }
   .price-block {
     margin-bottom: 3rem;
+  }
+  .price-block_category {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
   .price-block h4 {
     text-align: left;
@@ -885,12 +878,54 @@ footer address p {
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
+  .section-header {
+    text-align: left;
+  }
+  .section-header p {
+    font-size: 1.8rem;
+  }
   .phone-block {
     text-align: center;
     margin-right: 5rem;
   }
-  .main-title {
-    padding-bottom: 3rem;
+  .main .header-top .main-logo {
+    margin-bottom: 2rem;
+  }
+  .main .header-top .phone-block {
+    margin: 0;
+    text-align: left;
+  }
+  .main .header-top .phone-block a {
+    font-size: 2rem;
+  }
+  .main-subtitle {
+    margin-bottom: 3rem;
+    line-height: 2.4rem;
+  }
+  .main-form {
+    margin-bottom: 3rem;
+  }
+  .main-content .main-title {
+    text-align: left;
+  }
+  .main-content .main-title h1 {
+    font-size: 4.6rem;
+  }
+  .main-content .main-title .main-subtitle {
+    font-size: 2.2rem;
+  }
+  .main-content .main-form {
+    margin-bottom: 3rem;
+  }
+  .price-block {
+    margin-bottom: 3rem;
+  }
+  .price-block_category {
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  }
+  .price-block h4 {
+    text-align: left;
+    font-size: 2rem;
   }
   .feedback-prev-btn {
     left: 0rem;
@@ -905,8 +940,60 @@ footer address p {
   .scheme-block {
     min-height: 20rem;
   }
+  .scheme img {
+    margin-top: 2rem;
+  }
+  .scheme p {
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+  }
+  .all-inclusive .media-body h3 {
+    font-size: 2rem;
+  }
+  .all-inclusive .media-body p {
+    font-size: 1.4rem;
+  }
   .problems-list {
     min-height: auto;
+  }
+  .problems-list h3 {
+    font-size: 2rem;
+  }
+  .problems-list ul {
+    font-size: 1.4rem;
+  }
+  .certificate-slider .sertificate-block .first-img {
+    width: 90%;
+  }
+  .certificate-slider .sertificate-block .second-img {
+    top: 5%;
+    left: 35%;
+  }
+  .certificate-slider .sertificate-block .third-img {
+    top: 10%;
+    left: 42%;
+  }
+  .certificate-slider .sertificate-block h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .upsell .section-header p {
+    margin-bottom: 3rem;
+  }
+  .upsell-block p {
+    margin-bottom: 3rem;
+  }
+  .contacts p {
+    font-size: 1.8rem;
+  }
+  footer .footer-logo {
+    margin-bottom: 3rem;
+  }
+  footer p {
+    font-size: 1.8rem;
+  }
+  footer .text-bold {
+    font-weight: 500;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
