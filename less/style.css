@@ -391,8 +391,14 @@ section {
 .scheme {
   background-size: 100%;
 }
+.scheme .media {
+  align-items: baseline;
+}
 .scheme h3 {
   font-size: 2rem;
+}
+.scheme p {
+  margin-left: 1rem;
 }
 /*All inclusive*/
 .all-inclusive {
@@ -530,9 +536,11 @@ section {
   min-height: 15rem;
   text-align: center;
   color: #fff;
+  align-items: center;
 }
 .upsell-block img {
-  border-radius: 10px;
+  padding: 5px;
+  border-radius: 25px;
 }
 .upsell-block p {
   margin-bottom: 2rem;
@@ -997,27 +1005,130 @@ footer address p {
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .main-title h1 {
-    font-size: 3rem;
+  .section-header {
+    text-align: center;
   }
-  .main-title {
-    padding-bottom: 3rem;
+  .section-header p {
+    font-size: 2.2rem;
   }
   .phone-block {
     text-align: center;
+    margin-right: 5rem;
   }
-  .price-button {
-    text-align: center;
-    padding: 2rem;
+  .main .header-top {
+    padding: 3rem 0 1.2rem 0;
   }
-  .price-header-btn {
-    margin-top: 0;
-  }
-  .price-block {
+  .main .header-top .main-logo {
     margin-bottom: 2rem;
   }
-  .section-header_light {
-    margin-bottom: 0;
+  .main .header-top .phone-block {
+    margin: 0;
+    text-align: left;
+  }
+  .main .header-top .phone-block a {
+    font-size: 2rem;
+  }
+  .main .header-top .wrap {
+    padding-left: 5rem;
+  }
+  .main-subtitle {
+    margin-bottom: 3rem;
+    line-height: 2.4rem;
+  }
+  .main-content .main-title {
+    text-align: left;
+  }
+  .main-content .main-title h1 {
+    font-size: 4.5rem;
+  }
+  .main-content .main-title .main-subtitle {
+    font-size: 2.2rem;
+  }
+  .main-content .main-form {
+    margin-bottom: 3rem;
+  }
+  .price-block {
+    margin-bottom: 3rem;
+  }
+  .price-block_category {
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  }
+  .price-block h4 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .feedback-prev-btn {
+    left: 0rem;
+  }
+  .feedback-next-btn {
+    right: 0rem;
+  }
+  .scheme {
+    background: none;
+    text-align: center;
+  }
+  .scheme-block {
+    min-height: 20rem;
+  }
+  .scheme img {
+    margin-top: 2rem;
+  }
+  .all-inclusive .media {
+    margin-top: 2rem;
+  }
+  .all-inclusive .media-body h3 {
+    font-size: 2rem;
+  }
+  .all-inclusive .media-body p {
+    font-size: 1.4rem;
+  }
+  .problems-list h3 {
+    font-size: 2rem;
+  }
+  .problems-list ul {
+    font-size: 1.4rem;
+  }
+  .certificate-slider .sertificate-block .first-img {
+    width: 80%;
+  }
+  .certificate-slider .sertificate-block .second-img {
+    top: 5%;
+    left: 25%;
+  }
+  .certificate-slider .sertificate-block .third-img {
+    top: 12%;
+    left: 38%;
+  }
+  .certificate-slider .sertificate-block h3 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .tour .form label {
+    transform: translateX(-50%) translateY(15%);
+  }
+  .upsell .section-header p {
+    margin-bottom: 3rem;
+  }
+  .upsell-block p {
+    margin-bottom: 3rem;
+  }
+  .contacts p {
+    font-size: 1.8rem;
+  }
+  .contacts .map {
+    height: 100%;
+  }
+  .contacts .map iframe {
+    min-height: 330px;
+  }
+  footer .footer-logo {
+    margin-bottom: 3rem;
+  }
+  footer p {
+    font-size: 1.8rem;
+  }
+  footer .text-bold {
+    font-weight: 500;
   }
 }
 @media (min-width: 993px) and (max-width: 1190px) {
