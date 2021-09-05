@@ -793,6 +793,7 @@ footer address p {
   }
   .main-content .main-form {
     margin-bottom: 3rem;
+    margin-top: 3rem;
   }
   .price-block {
     margin-bottom: 3rem;
@@ -809,11 +810,38 @@ footer address p {
   .features-img {
     margin-bottom: 0rem;
   }
+  .features-block h3 {
+    margin-bottom: 2rem;
+  }
   .features-block p {
     font-size: 1.8rem;
   }
-  .scheme .container p {
-    margin-bottom: 3rem;
+  .feedback-slider .feedback-prev-btn {
+    left: 1%;
+  }
+  .feedback-slider .feedback-next-btn {
+    right: 1%;
+  }
+  .feedback-form {
+    padding: 4rem 4rem;
+  }
+  .feedback-form input {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .scheme .container .section-header p {
+    margin-left: 0rem;
+  }
+  .scheme .container .media {
+    margin-bottom: 10%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .scheme .container .media-body {
+    margin-left: 5%;
+  }
+  .scheme .container .media-body p {
+    margin-left: 0rem;
     font-size: 1.4rem;
   }
   .all-inclusive .media-body h3 {
@@ -830,15 +858,15 @@ footer address p {
     font-size: 1.4rem;
   }
   .certificate-slider .certificate-block .first-img {
-    width: 90%;
+    width: 100%;
   }
   .certificate-slider .certificate-block .second-img {
-    top: 5%;
-    left: 35%;
+    top: 10%;
+    left: 30%;
   }
   .certificate-slider .certificate-block .third-img {
-    top: 10%;
-    left: 45%;
+    top: 20%;
+    left: 30%;
   }
   .certificate-slider .certificate-block h3 {
     font-size: 2rem;
@@ -847,11 +875,31 @@ footer address p {
   .upsell .section-header p {
     margin-bottom: 3rem;
   }
-  .upsell-block p {
+  .upsell .media {
+    flex-direction: column;
+    align-items: center;
+  }
+  .upsell .media-left img {
+    height: 400px;
+    width: 400px;
+  }
+  .upsell .media-body {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  .upsell .media-body p {
     margin-bottom: 3rem;
+  }
+  .upsell .media-body ul {
+    margin-left: 5%;
   }
   .contacts p {
     font-size: 1.8rem;
+  }
+  .contacts .map {
+    margin-bottom: 10%;
+    min-height: 25rem;
+    height: 90%;
   }
   footer .footer-logo {
     margin-bottom: 3rem;

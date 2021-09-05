@@ -884,6 +884,7 @@ footer {
         }
         .main-form {
             margin-bottom: 3rem;
+            margin-top: 3rem;
         }
     }
     .price-block {
@@ -903,18 +904,51 @@ footer {
         margin-bottom: 0rem;
     }
     &-block {
+        h3 {
+            margin-bottom: 2rem;
+        }
         p {
             font-size: 1.8rem;
         }
     }
     }
-    .scheme {
-    .container {
-    p {
-        margin-bottom: 3rem;
-        font-size: 1.4rem;
+    .feedback {
+        &-slider {
+            .feedback-prev-btn {
+                left: 1%;
+            }
+            .feedback-next-btn {
+                right: 1%;
+            }
+        }
+        &-form {
+            padding: 4rem 4rem;
+            input {
+                margin-top: 0rem;
+                margin-bottom: 1rem;
+            }
+        }
     }
-  }
+    .scheme {
+        .container {
+            .section-header {
+                p {
+                    margin-left: 0rem;
+                }
+            }
+           .media {
+               margin-bottom: 10%;
+               flex-direction: row;
+               align-items: center;
+               &-body {
+                   margin-left: 5%;
+                   p {
+                       margin-left: 0rem;
+                       font-size: 1.4rem;
+                   }
+               }
+           }
+        }
     }
     .all-inclusive {
     .media {
@@ -944,15 +978,15 @@ footer {
         .certificate {
             &-block {
                 .first-img {
-                    width: 90%;
+                    width: 100%;
                 }
                 .second-img {
-                    top: 5%;
-                    left: 35%;
+                    top: 10%;
+                    left: 30%;
                 }
                 .third-img {
-                    top: 10%;
-                    left: 45%;
+                    top: 20%;
+                    left: 30%;
                 }
                 h3 {
                     font-size: 2rem;
@@ -969,9 +1003,24 @@ footer {
             margin-bottom: 3rem;
         }
     }
-    &-block {
-        p {
-            margin-bottom: 3rem;
+    .media {
+        flex-direction: column;
+        align-items: center;
+        &-left {
+            img {
+                height: 400px;
+                width: 400px;
+            }
+        }
+        &-body {
+            margin-top: 5%;
+            margin-bottom: 10%;
+            p {
+                margin-bottom: 3rem;
+            }
+            ul {
+                margin-left: 5%;
+            }
         }
     }
     }
@@ -979,6 +1028,11 @@ footer {
     p {
         font-size: 1.8rem;
     }
+    .map {
+        margin-bottom: 10%;
+        min-height: 25rem;
+        height: 90%;
+        }
     }
     footer {
     .footer-logo {
