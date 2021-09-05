@@ -1081,6 +1081,13 @@ footer address p {
   }
   .main-content .main-form {
     margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .features-block h3 {
+    margin-bottom: 2rem;
+  }
+  .features-block p {
+    font-size: 1.8rem;
   }
   .price-block {
     margin-bottom: 3rem;
@@ -1092,25 +1099,36 @@ footer address p {
     text-align: left;
     font-size: 2rem;
   }
-  .feedback-prev-btn {
-    left: 0rem;
+  .feedback-slider .feedback-prev-btn {
+    left: 1%;
   }
-  .feedback-next-btn {
-    right: 0rem;
+  .feedback-slider .feedback-next-btn {
+    right: 1%;
   }
-  .scheme {
-    background: none;
-    text-align: center;
+  .feedback-form {
+    padding: 4rem 4rem;
   }
-  .scheme-block {
-    min-height: 20rem;
+  .feedback-form label {
+    transform: translate(0%, 12px);
   }
-  .scheme img {
-    margin-top: 2rem;
+  .feedback-form input {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
   }
-  .scheme p {
+  .scheme .container .section-header p {
+    margin-left: 0rem;
+  }
+  .scheme .container .media {
+    margin-bottom: 10%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .scheme .container .media-body {
+    margin-top: 5%;
+  }
+  .scheme .container .media-body p {
+    margin-left: 0rem;
     font-size: 1.4rem;
-    line-height: 1.2rem;
   }
   .all-inclusive .media-body h3 {
     font-size: 2rem;
@@ -1128,15 +1146,15 @@ footer address p {
     font-size: 1.4rem;
   }
   .certificate-slider .certificate-block .first-img {
-    width: 90%;
+    width: 100%;
   }
   .certificate-slider .certificate-block .second-img {
-    top: 5%;
-    left: 35%;
+    top: 10%;
+    left: 34%;
   }
   .certificate-slider .certificate-block .third-img {
-    top: 10%;
-    left: 42%;
+    top: 20%;
+    left: 34%;
   }
   .certificate-slider .certificate-block h3 {
     font-size: 2rem;
@@ -1145,11 +1163,39 @@ footer address p {
   .upsell .section-header p {
     margin-bottom: 3rem;
   }
-  .upsell-block p {
+  .upsell .media {
+    flex-direction: column;
+    align-items: center;
+  }
+  .upsell .media-left img {
+    height: 600px;
+    width: 600px;
+  }
+  .upsell .media-body {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: -3%;
+  }
+  .upsell .media-body p {
+    font-size: 2.8rem;
     margin-bottom: 3rem;
+    font-weight: 700;
+  }
+  .upsell .media-body span {
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+  .upsell .media-body ul {
+    font-size: 2rem;
+    margin-left: 5%;
   }
   .contacts p {
     font-size: 1.8rem;
+  }
+  .contacts .map {
+    margin-bottom: 10%;
+    min-height: 25rem;
+    height: 90%;
   }
   footer .footer-logo {
     margin-bottom: 3rem;
