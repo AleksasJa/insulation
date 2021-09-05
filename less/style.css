@@ -1250,6 +1250,9 @@ footer address p {
   .main-content .main-form {
     margin-bottom: 3rem;
   }
+  .features-img {
+    min-height: 0px;
+  }
   .price-block {
     margin-bottom: 3rem;
   }
@@ -1292,15 +1295,15 @@ footer address p {
     font-size: 1.4rem;
   }
   .certificate-slider .certificate-block .first-img {
-    width: 80%;
+    width: 100%;
   }
   .certificate-slider .certificate-block .second-img {
-    top: 5%;
+    top: 10%;
     left: 25%;
   }
   .certificate-slider .certificate-block .third-img {
-    top: 12%;
-    left: 38%;
+    top: 20%;
+    left: 25%;
   }
   .certificate-slider .certificate-block h3 {
     font-size: 2rem;
@@ -1312,8 +1315,31 @@ footer address p {
   .upsell .section-header p {
     margin-bottom: 3rem;
   }
-  .upsell-block p {
+  .upsell .media {
+    flex-direction: column;
+    align-items: center;
+  }
+  .upsell .media-left img {
+    height: 600px;
+    width: 600px;
+  }
+  .upsell .media-body {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 8%;
+  }
+  .upsell .media-body p {
+    font-size: 2.8rem;
     margin-bottom: 3rem;
+    font-weight: 700;
+  }
+  .upsell .media-body span {
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+  .upsell .media-body ul {
+    font-size: 2rem;
+    margin-left: 5%;
   }
   .contacts p {
     font-size: 1.8rem;
