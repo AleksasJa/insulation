@@ -407,6 +407,10 @@ section {
 .scheme p {
   margin-left: 1rem;
 }
+.scheme img {
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+  border-radius: 6px;
+}
 /*All inclusive*/
 .all-inclusive {
   background-color: #edf0f6;
@@ -429,6 +433,7 @@ section {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
 }
 .circle-border {
   display: inline-block;
@@ -485,6 +490,7 @@ section {
 }
 .problems-list_good {
   border-color: #ffe547;
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
 }
 .problems-list_good ul li:before {
   background: url(../img/problems/icons8-галочка-48.png) no-repeat center;
@@ -550,6 +556,7 @@ section {
 .upsell-block img {
   padding: 5px;
   border-radius: 25px;
+  box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
 }
 .upsell-block p {
   margin-bottom: 2rem;
