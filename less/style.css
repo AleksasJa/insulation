@@ -29,6 +29,13 @@ a:focus,
 textarea:focus {
   outline: none;
 }
+button:focus::placeholder,
+input:focus::placeholder,
+a:focus::placeholder,
+textarea:focus::placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 .button {
   display: inline-block;
   background-color: #ffe547;
