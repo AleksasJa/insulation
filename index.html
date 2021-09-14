@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru">
   <head>
-    <title>Автоматизированная штукатурка стен</title>
+    <title>K-Flex Официальный представитель завода К-Флекс теплоизоляция k-flex39.ru</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,6 +19,7 @@
     <!--Highslide-->
     <link href="./js/highslide/highslide/highslide.css" rel="stylesheet" property="stylesheet" />
   </head>
+
   <body>
 
     <div class="main">
@@ -229,19 +230,11 @@
           </div>
          </div>
             <div class="feedback-slider wow fadeInLeft" data-wow-delay="0.1s">
+
                 <div class="feedback-slider_item">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="fotorama" data-nav="thumbs">
-                               <img src="./img/feedback/photo/1.jpg" alt="">
-                               <img src="./img/feedback/photo/2.jpg" alt="">
-                               <img src="./img/feedback/photo/3.jpg" alt="">
-                               <img src="./img/feedback/photo/4.jpg" alt="">
-                               <img src="./img/feedback/photo/5.jpg" alt="">
-                               <img src="./img/feedback/photo/6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
+                       
+                        <div class="col-md-12">
                             <p>Объект: г.Москва Нахимовский проспект д.10</p>
                             <p>Площадь: <strong>357м2</strong></p>
                             <p>Выполнен за: <strong>10 дней</strong></p>
@@ -265,17 +258,8 @@
                 </div>
                 <div class="feedback-slider_item">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="fotorama" data-nav="thumbs">
-                               <img src="./img/feedback/photo/1.jpg" alt="">
-                               <img src="./img/feedback/photo/2.jpg" alt="">
-                               <img src="./img/feedback/photo/3.jpg" alt="">
-                               <img src="./img/feedback/photo/4.jpg" alt="">
-                               <img src="./img/feedback/photo/5.jpg" alt="">
-                               <img src="./img/feedback/photo/6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
+                       
+                        <div class="col-md-12">
                                 <p>Объект: г.Москва Нахимовский проспект д.10</p>
                                 <p>Площадь: <strong>357м2</strong></p>
                                 <p>Выполнен за: <strong>10 дней</strong></p>
@@ -297,21 +281,11 @@
 
                         </div>
                         </div>
-                        </div>
-                
+                </div>
                 <div class="feedback-slider_item">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="fotorama" data-nav="thumbs">
-                               <img src="./img/feedback/photo/1.jpg" alt="">
-                               <img src="./img/feedback/photo/2.jpg" alt="">
-                               <img src="./img/feedback/photo/3.jpg" alt="">
-                               <img src="./img/feedback/photo/4.jpg" alt="">
-                               <img src="./img/feedback/photo/5.jpg" alt="">
-                               <img src="./img/feedback/photo/6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
+                        
+                        <div class="col-md-12">
                                 <p>Объект: г.Москва Нахимовский проспект д.10</p>
                                 <p>Площадь: <strong>357м2</strong></p>
                                 <p>Выполнен за: <strong>10 дней</strong></p>
@@ -333,6 +307,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
 
             <div class="row">
@@ -1000,7 +975,7 @@
               
                   <address>
                    
-                    <p>Реквизты: <br> ООО СТЕП <br> ИНН 3906962877 ОГРН 1153926017178</p>
+                    <p>Реквизты: <br> ООО «САН-груп» <br> ИНН 3906341855 ОГРН 1143926040290</p>
                   </address>
               
 
@@ -1126,7 +1101,30 @@ _   <!--Fotorama slider-->
          /*Feedback slider*/
          $('.feedback-slider').slick({
              prevArrow: '<button type="button" class="feedback-slider-btn feedback-prev-btn"><img src="./img/feedback/prevArrow.png"/></button>',
-             nextArrow: '<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="./img/feedback/nextArrow.png"/></button>'
+             nextArrow: '<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="./img/feedback/nextArrow.png"/></button>',
+             infinite: true,
+             slidesToShow: 3,
+             slidesToScroll: 3,
+             responsive: [
+                {
+                    breakpoint: 991,
+                     settings: {
+                      slidesToShow: 2,
+                      prevArrow: '<button class="prev arrow"></button>',
+                      nextArrow: '<button class="next arrow"></button>',
+                      slidesToScroll: 2
+                }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                     slidesToShow: 1,
+                     slidesToScroll: 1,
+                     prevArrow: '<button class="prev arrow"></button>',
+                     nextArrow: '<button class="next arrow"></button>'
+                }
+               }
+            ]
          });
          /*Features slider*/
          $('.features-slider').slick({
