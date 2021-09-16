@@ -1,6 +1,6 @@
 /*Colors*/
 @btn-color: #ffe547;
-@icons-color: rgb(3, 99, 3);
+@icons-color: #ffe547;
 @text: #1e1e1e;
 @danger: red;
 @bg-light: gray;
@@ -371,10 +371,15 @@ section {
         }
     }
     &-slider{
-        padding: 5rem 6rem;
+        //padding: 5rem 6rem;
         background-color: #fff;
         box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+        &_item {
+            padding: 2% 1%;
+        }
         p {
+            height: 300px;
+            width: 260px;
             font-size: 1.6rem;
         }
         &-btn {
@@ -392,12 +397,21 @@ section {
     }
     .media{
         margin-top: 3rem;
+        
         font-size: 1.4rem;
         h5{
             font-weight: 900;
         }
         img{
             border-radius: 50px;
+        }
+    }
+    .feedback-text {
+        display: flex;
+        align-items: center;
+        p {
+            //min-height: 320px;
+            //width: 400px;
         }
     }
     &-form {
@@ -758,6 +772,13 @@ footer {
             .feedback-next-btn {
                 right: 1%;
             }
+            p {
+               height: 280px;
+               width: 280px; 
+            }
+            .arrow {
+                transform: translateY(200%);
+            }
         }
         &-form {
             padding: 4rem 4rem;
@@ -936,6 +957,13 @@ footer {
             .feedback-next-btn {
                 right: 1%;
             }
+            p {
+                height: 240px;
+                width: 340px; 
+             }
+             .arrow {
+                 transform: translateY(200%);
+             }
         }
         &-form {
             padding: 4rem 4rem;
@@ -1114,6 +1142,13 @@ footer {
             .feedback-next-btn {
                 right: 1%;
             }
+            p {
+                height: 200px;
+                width: 425px; 
+             }
+             .arrow {
+                 transform: translateY(200%);
+             }
         }
         &-form {
             padding: 4rem 4rem;
@@ -1323,6 +1358,13 @@ footer {
             .feedback-next-btn {
                 right: 1%;
             }
+            p {
+                height: 200px;
+                width: 425px; 
+             }
+             .arrow {
+                 transform: translateY(200%);
+             }
         }
         &-form {
             padding: 4rem 4rem;
@@ -1532,6 +1574,13 @@ footer {
         &-next-btn {
             right: 0rem;
         }
+        p {
+            height: 305px;
+            width: 425px; 
+         }
+         .arrow {
+             transform: translateY(200%);
+         }
     }
     .scheme {
         background: none;
@@ -1742,6 +1791,13 @@ footer {
         &-next-btn {
             right: 0rem;
         }
+        p {
+            height: 305px;
+            width: 275px; 
+         }
+         .arrow {
+             transform: translateY(200%);
+         }
     }
     .scheme {
         background: none;
@@ -1967,6 +2023,13 @@ footer {
         &-next-btn {
             right: 0rem;
         }
+        p {
+            height: 305px;
+            width: 325px; 
+         }
+         .arrow {
+             transform: translateY(200%);
+         }
     }
     .scheme {
         background: none;
