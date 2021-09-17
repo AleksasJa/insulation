@@ -83,7 +83,7 @@
                                      
                                      <input class="form-input name"  type="text" required name="user_name" placeholder="Ваше имя">
                                      
-                                     <input class="form-input phone" type="text" required name="user_phone" placeholder="Ваш телефон">
+                                     <input class="form-input phone" type="tel" required name="user_phone" placeholder="Ваш телефон">
                                      <button class="form-btn button" type="submit">оставьте заявку</button>
                                     </form>
                                 
@@ -294,7 +294,7 @@
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-6">
                                         
-                                        <input class="form-input phone" type="text" placeholder="Ваш телефон">
+                                        <input class="form-input phone" type="tel" placeholder="Ваш телефон">
                                 </div>
                             </div>
                                 <button class="form-btn feedback-btn button" type="submit">оставьте заявку</button>
@@ -801,7 +801,7 @@
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-6">
                                           
-                                          <input class="form-input phone" type="text" placeholder="Ваш телефон">
+                                          <input class="form-input phone" type="tel" placeholder="Ваш телефон">
                                         </div>
                                        </div>
                                         <button class="form-btn button tour-btn" type="submit">отправить</button>
@@ -926,7 +926,7 @@
                            
                            
                                 
-                                <input class="form-input phone" type="text" placeholder="Ваш телефон">
+                                <input class="form-input phone" type="tel" placeholder="Ваш телефон">
                            
                             
                                
@@ -1041,9 +1041,10 @@ _   <!--Fotorama slider-->
     
     <!--WOW JS-->
     <script src="./js/wow.min.js"></script>
-    <script src="./js/jquery.maskedinput.min.js"></script>
+    
 
     <!--maskedinput-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script>
     jQuery(function($){
         $.mask.definitions["h"] = "[А-Яа-я]";
