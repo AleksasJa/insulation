@@ -1046,8 +1046,9 @@ _   <!--Fotorama slider-->
     <!--maskedinput-->
     <script>
     jQuery(function($){
-    $(".phone").mask("+7 (999) 999-99-99", {autoclear: false});
-    $(".name").mask("aaa?aaaaaaaaa", {placeholder: ""});
+        $.mask.definitions["h"] = "[А-Яа-я]";
+        $(".phone").mask("+7 (999) 999-99-99", {autoclear: false});
+        $(".name").mask("hhh?hhhhhh", {placeholder: ""});
     });
     </script>
 
