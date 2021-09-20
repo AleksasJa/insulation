@@ -80,9 +80,7 @@
                                     <h2 class= "main-form-header"> Для расчета точной стоимости<br>оставьте ваши<strong> контакты</strong></h2>
 
                                      <form class="form" action="mail.php" method="POST">
-                                     
                                      <input class="form-input name"  type="text" required name="user_name" placeholder="Ваше имя">
-                                     
                                      <input class="form-input phone" type="tel" required name="user_phone" placeholder="Ваш телефон">
                                      <button class="form-btn button" type="submit">оставьте заявку</button>
                                     </form>
@@ -998,8 +996,8 @@
         </div>
     </footer>
 
-    <!--Modal windows-->
-    <!--Get consultation-->
+    <!--modal windows-->
+    <!--get consultation-->
     <div class="popup">
         <div class="popup-dialog">
             <div class="popup-content">
@@ -1021,150 +1019,42 @@
         </div>
     </div>
     
-    <!-- Optional JavaScript -->
+    <!-- optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!--Slick slider/style-->
-    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <!--slick slider/style-->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
 
-    <!--Slick slider/framework-->
-    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <!--slick slider/framework-->
+    <script src="./js/slick.min.js"></script>
 
-_   <!--Fotorama slider-->
+_   <!--fotorama slider-->
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     
-    <!--WOW JS-->
+    <!--wow js-->
     <script src="./js/wow.min.js"></script>
-    
-
-    <!--maskedinput-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-    <script>
-    jQuery(function($){
-        $.mask.definitions["h"] = "[А-Яа-я]";
-        $(".phone").mask("+7 (999) 999-99-99", {autoclear: false});
-        $(".name").mask("hhh?hhhhhh", {placeholder: ""});
-    });
-    </script>
-
-    <!--WOW JS-->
-    <script>
+     <!--wow js initialisation-->
+     <script>
         new WOW().init();
     </script>
 
-    <!--Inicialization slider-->
-    <script>
-    $(document).ready(function(){
+    <!--maskedinput initialisation-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 
-         $('.popup-btn').on('click', function (e) {
-             e.preventDefault();
-             $('.popup').show('slow');
-         });
-         $('.popup-close').on('click', function (e) {
-            e.preventDefault();
-            $('.popup').hide();
-         });
-         /*Feedback slider*/
-         $('.feedback-slider').slick({
-             prevArrow: '<button type="button" class="feedback-slider-btn feedback-prev-btn"><img src="./img/feedback/prevArrow.png"/></button>',
-             nextArrow: '<button type="button" class="feedback-slider-btn feedback-next-btn"><img src="./img/feedback/nextArrow.png"/></button>',
-             infinite: true,
-             slidesToShow: 3,
-             slidesToScroll: 3,
-             responsive: [
-                {
-                    breakpoint: 991,
-                     settings: {
-                      slidesToShow: 2,
-                      prevArrow: '<button class="prev arrow"></button>',
-                      nextArrow: '<button class="next arrow"></button>',
-                      slidesToScroll: 2
-                }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                     slidesToShow: 1,
-                     slidesToScroll: 1,
-                     prevArrow: '<button class="prev arrow"></button>',
-                     nextArrow: '<button class="next arrow"></button>'
-                }
-               }
-            ]
-         });
-         /*Features slider*/
-         $('.features-slider').slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                    prevArrow: '<button class="prev arrow"></button>',
-                    nextArrow: '<button class="next arrow"></button>',
-                    slidesToScroll: 2
-            }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    prevArrow: '<button class="prev arrow"></button>',
-                    nextArrow: '<button class="next arrow"></button>'
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-        });
-         /*Certificate slider*/
-         $('.certificate-slider').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                    prevArrow: '<button class="prev arrow"></button>',
-                    nextArrow: '<button class="next arrow"></button>',
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    prevArrow: '<button class="prev arrow"></button>',
-                    nextArrow: '<button class="next arrow"></button>'
-                }
-            }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-         ]
-         });
-        });
-
-    </script>
-
-    <!--Highslide-->
+    <!--highslide-->
     <script src="./js/highslide/highslide/highslide.js" type="text/javascript"></script>
     <script type="text/javascript">
         hs.graphicsDir = './js/highslide/highslide/graphics/';
         hs.wrapperClassName = 'your-own-style';
+    </script>
+    <!--main js-->
+    <script src="./js/main.js">
     </script>
   </body>
 </html>
