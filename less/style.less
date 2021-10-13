@@ -69,6 +69,27 @@ button, input, a, textarea {
         border: 1px solid @border-input;
         border-radius: 5px;
         padding: 1.5rem;
+        &:valid {
+            &:not(:placeholder-shown){
+                border-color: green;
+            }
+        }
+        &:invalid {
+            &:not(:placeholder-shown){
+                border-color: red;
+                &+.form-error {
+                    display: block;
+                }
+            }
+        }
+    }
+    &-error {
+        color: red;
+	    text-align: left;
+	    font-size: 1.2rem;
+	    display: block;
+	    margin-top: -20px;
+	    display: none;
     }
     /*field signature*/
     label {
@@ -86,6 +107,68 @@ button, input, a, textarea {
         height: 5.5rem;
         font-size: 1.6rem;
     }
+}
+#value_username-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1.2rem;
+    color: red;
+}
+#value_userphone-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1.2rem;
+    width: 100%;
+    color: red;
+}
+#modal_username-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1rem;
+    color: red;
+}
+#modal_userphone-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1rem;
+    width: 100%;
+    color: red;
+}
+#feedback_username-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1.2rem;
+    color: red;
+}
+#feedback_userphone-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1.2rem;
+    width: 100%;
+    color: red;
+}
+#tour_username-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1.2rem;
+    color: red;
+}
+#tour_userphone-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1.2rem;
+    width: 100%;
+    color: red;
+}
+#contacts_username-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1.2rem;
+    color: red;
+}
+#contacts_userphone-error {
+    transform: translateX(-50%) translateY(-100%);
+    font-size: 1.2rem;
+    width: 100%;
+    color: red;
+}
+.input-error {
+    border-color: red;
+}
+.btn-ok {
+    background-color: green;
+    color: white;
 }
 /*typography*/
 section {
@@ -428,6 +511,7 @@ section {
     &-btn {
         max-width: 30rem;
         margin: auto;
+        margin-top: 2%;
     }
 }
 
@@ -674,7 +758,7 @@ footer {
 
 /*Modal windows*/
 .popup {
-    display: none;
+    visibility: hidden;
     position: fixed;
     top: 0;
     right: 0;
@@ -684,6 +768,29 @@ footer {
     height: 100%;
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.5);
+    &-ok {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        background-color: rgba(0, 0, 0, 0.5);
+        &_close {
+            position: absolute;
+            top: -1.5rem;
+            right: -2rem;
+            width: 2rem;
+            text-align: center;
+            border: none;
+            background-color: transparent;
+            font-size: 2rem;
+            color: white;
+        }
+    }
     &-form {
         margin-top: 3rem;
         padding: 0;
@@ -712,6 +819,10 @@ footer {
         font-weight: 900;
     }
 }
+.open {
+   opacity: 1;
+   visibility: visible; 
+}
 /*Media query*/
 @media(max-width: 399.98px){
     .section-header {
@@ -719,6 +830,37 @@ footer {
         p {
             font-size: 1.8rem;
         }
+    }
+    #value_username-error {
+        font-size: 0.8rem;
+    }
+    #value_userphone-error {
+        font-size: 0.8rem;
+    }
+    #modal_username-error {
+        font-size: 0.7rem;
+    }
+    #modal_userphone-error {
+        font-size: 0.7rem;
+    }
+    #feedback_username-error {
+        font-size: 0.7rem;
+    }
+    #feedback_userphone-error {
+        font-size: 0.7rem; 
+    }
+    #tour_username-error {
+        font-size: 0.7rem;
+    }
+    #tour_userphone-error {
+        font-size: 0.7rem;
+    }
+    #contacts_username-error {
+        font-size: 0.7rem;
+    }
+    #contacts_userphone-error {
+        font-size: 0.7rem;
+        
     }
     .main {
         .phone-block {
@@ -779,8 +921,7 @@ footer {
         &-form {
             padding: 4rem 4rem;
             input {
-                margin-top: 0rem;
-                margin-bottom: 1rem;
+                margin-top: 1.5rem;
             }
         }
     }
@@ -896,6 +1037,39 @@ footer {
     }
 }
 @media(min-width: 400px) and (max-width: 499.98px){
+    #value_username-error {
+        font-size: 1.2rem;
+    }
+    #value_userphone-error {
+        font-size: 1.2rem;
+    }
+    #modal_username-error {
+        font-size: 0.7rem;
+    }
+    #modal_userphone-error {
+        font-size: 0.7rem;
+    }
+    #feedback_username-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%);
+    }
+    #feedback_userphone-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%); 
+    }
+    #tour_username-error {
+        font-size: 1rem;
+    }
+    #tour_userphone-error {
+        font-size: 1rem;
+    }
+    #contacts_username-error {
+        font-size: 1.2rem;
+    }
+    #contacts_userphone-error {
+        font-size: 1.2rem;
+        
+    }
     .main {
         .phone-block {
             margin: 0;
@@ -964,8 +1138,8 @@ footer {
         &-form {
             padding: 4rem 4rem;
             input {
-                margin-top: 0rem;
-                margin-bottom: 1rem;
+                margin-top: 1.5rem;
+                //margin-bottom: 1rem;
             }
         }
     }
@@ -1098,6 +1272,43 @@ footer {
             font-size: 1.8rem;
         }
     }
+    #value_username-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #value_userphone-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #modal_username-error {
+        font-size: 0.7rem;
+    }
+    #modal_userphone-error {
+        font-size: 0.7rem;
+    }
+    #feedback_username-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%);
+    }
+    #feedback_userphone-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%); 
+    }
+    #tour_username-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #tour_userphone-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #contacts_username-error {
+        font-size: 1.2rem;
+    }
+    #contacts_userphone-error {
+        font-size: 1.2rem;
+        
+    }
     .main {
         .header {
             &-top {
@@ -1152,8 +1363,8 @@ footer {
                 transform: translate(0%, 12px);
             }
             input {
-                margin-top: 0rem;
-                margin-bottom: 1rem;
+                margin-top: 1.5rem;
+                //margin-bottom: 1rem;
             }
         }
     }
@@ -1278,6 +1489,22 @@ footer {
     }
 }
 @media(min-width: 576px) and (max-width: 767.98px){
+    #feedback_username-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%);
+    }
+    #feedback_userphone-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%); 
+    }
+    #tour_username-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #tour_userphone-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
     .section-header {
         text-align: left;
         p {
@@ -1368,8 +1595,8 @@ footer {
                 transform: translate(0%, 12px);
             }
             input {
-                margin-top: 0rem;
-                margin-bottom: 1rem;
+                margin-top: 1.5rem;
+                //margin-bottom: 1rem;
             }
         }
     }
@@ -1505,6 +1732,37 @@ footer {
             font-size: 2.2rem;
         }
     }
+    #value_username-error {
+        font-size: 1rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #value_userphone-error {
+        font-size: 1rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #feedback_username-error {
+        font-size: 1rem;
+        transform: translateX(-50%) translateY(-70%);
+    }
+    #feedback_userphone-error {
+        font-size: 1rem;
+        transform: translateX(-50%) translateY(-70%); 
+    }
+    #tour_username-error {
+        font-size: 1rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #tour_userphone-error {
+        font-size: 1rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #contacts_username-error {
+        font-size: 1rem;
+    }
+    #contacts_userphone-error {
+        font-size: 1rem;
+        
+    }
     .phone-block {
         text-align: center;
         margin-right: 5rem;
@@ -1577,6 +1835,16 @@ footer {
          .arrow {
              transform: translateY(200%);
          }
+         &-form {
+            padding: 4rem 4rem;
+            label {
+                transform: translate(0%, 12px);
+            }
+            input {
+                margin-top: 1.5rem;
+                //margin-bottom: 1rem;
+            }
+        }
     }
     .scheme {
         background: none;
@@ -1715,6 +1983,14 @@ footer {
         p {
             font-size: 2.2rem;
         }
+    }
+    #feedback_username-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%);
+    }
+    #feedback_userphone-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%); 
     }
     .phone-block {
         text-align: center;
@@ -1941,6 +2217,22 @@ footer {
             font-size: 3.2rem;
         }
     }
+    #value_username-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #value_userphone-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-90%);
+    }
+    #feedback_username-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%);
+    }
+    #feedback_userphone-error {
+        font-size: 1.2rem;
+        transform: translateX(-50%) translateY(-70%); 
+    }
     .phone-block {
         text-align: center;
         margin-right: 5rem;
@@ -2137,5 +2429,16 @@ footer {
         .text-bold {
             font-weight: 500;
         }
+     }
+     .popup-ok {
+         .popup-content {
+             min-height: 25rem;
+             h4 {
+                 font-size: 2rem;
+             }
+             p {
+                 font-size: 1.5rem;
+             }
+         }
      }  
 }

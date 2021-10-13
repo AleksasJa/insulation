@@ -42,7 +42,7 @@
                   
                       <div class="wrap">
                           
-                                <button class="button header-btn popup-btn">Получить консультацию</button>
+                                <button class="button header-btn popup-btn">получить консультацию</button>
                           
                       </div>
                   
@@ -79,9 +79,10 @@
                             <div class="main-form wow fadeInLeft" data-wow-delay="0.2s">
                                     <h2 class= "main-form-header"> Для расчета точной стоимости<br>оставьте ваши<strong> контакты</strong></h2>
 
-                                     <form class="form" action="mail.php" method="POST">
-                                     <input class="form-input name"  type="text" required name="user_name" placeholder="Ваше имя">
-                                     <input class="form-input phone" type="tel" required name="user_phone" placeholder="Ваш телефон">
+                                     <form class="form value_form" action="value.php" method="post">
+                                     <input class="form-input name"  type="text" name="value_username" placeholder="Ваше имя*"/>
+                                     <input class="form-input phone" type="tel"  name="value_userphone" placeholder="+7(___)___-__-__"  pattern="+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" minlength="16" maxlength="16">
+                                     <span class="form-error">В этом поле укажите ваш телефон в формате: <b>+7(XXX)XXX-XX-XX</b></span>
                                      <button class="form-btn button" type="submit">оставьте заявку</button>
                                     </form>
                                 
@@ -284,15 +285,16 @@
                     <div class="feedback-form wow fadeInLeft" data-wow-delay="0.1s">
                         <h3>Хотите так же? Оставьте ваши контакные данные</h3>
 
-                        <form action="#">
+                        <form class="form feedback_form" action="feedback.php" method="post">
                             <div class="row">
                                 <div class="col-12 col-sm-12 col-md-6">
                                         
-                                        <input class="form-input name" type="text" placeholder="Ваше имя">
+                                        <input class="form-input name" type="text"  name="feedback_username" placeholder="Ваше имя*">
                                 </div>
                                 <div class="col-12 col-sm-12 col-md-6">
                                         
-                                        <input class="form-input phone" type="tel" placeholder="Ваш телефон">
+                                        <input class="form-input phone" type="tel"  name="feedback_userphone"  placeholder="+7(___)___-__-__"  pattern="+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" minlength="16" maxlength="16"/>
+                                        <span class="form-error">В этом поле укажите ваш телефон в формате: <b>+7(XXX)XXX-XX-XX</b></span>
                                 </div>
                             </div>
                                 <button class="form-btn feedback-btn button" type="submit">оставьте заявку</button>
@@ -781,7 +783,7 @@
              <div class="section-header">
                 <h2>Посмотрите<wbr> как мы работаем</h2>
                 <p>Хотите увидеть как мы работаем?</p>
-                <p>Вы можете сделать это приехав к нам в офис по адресу: Калининград, ул.Мусоргкоско 10, офис 123.</p>
+                <p>Вы можете сделать это приехав к нам в офис по адресу: Калининград, ул.Мусоргского 10, офис 123.</p>
                 <p>Заполните форму, мы перезвоним и договоримся о времени.</p>
             </div>
            </div>
@@ -791,18 +793,20 @@
                         <div class="col">
                             <div class="main-form wow fadeInLeft" data-wow-delay="0.1s">
                                     <h2 class= "main-form-header"> Заполните форму</strong></h2>
-                                    <form class="form" action="#">
+                                    <form class="form tour_form" action="tour.php" method="post">
                                       <div class="row">
                                         <div class="col-12 col-sm-12 col-md-6">
                                           
-                                          <input class="form-input name" type="text" placeholder="Ваше имя">
+                                          <input class="form-input name" type="text"  name="tour_username" placeholder="Ваше имя">
                                         </div>
                                         <div class="col-12 col-sm-12 col-md-6">
                                           
-                                          <input class="form-input phone" type="tel" placeholder="Ваш телефон">
+                                          <input class="form-input phone" type="tel"  name="tour_userphone"  placeholder="+7(___)___-__-__"  pattern="+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" minlength="16" maxlength="16"/>
+                                          <span class="form-error">В этом поле укажите ваш телефон в формате: <b>+7(XXX)XXX-XX-XX</b></span>
                                         </div>
                                        </div>
                                         <button class="form-btn button tour-btn" type="submit">отправить</button>
+                                    </form>
                                     </div>
                                 </div>
                             </div>
@@ -916,21 +920,22 @@
                     <div class="main-form contacts-form">
                        <h2 class="main-form-header"> Оставьте контактные данные для связи</h2>
                         <div class="form">
-                            <form class="form" action="#">
+                            <form class="form contacts_form" action="contacts.php" method="post">
                               
                            
                                 
-                                <input class="form-input name" type="text" placeholder="Ваше имя">
+                                <input class="form-input name" type="text"  name="contacts_username" placeholder="Ваше имя">
                            
                            
                                 
-                                <input class="form-input phone" type="tel" placeholder="Ваш телефон">
-                           
+                                <input class="form-input phone" type="tel"  name="contacts_userphone"  placeholder="+7(___)___-__-__"  pattern="+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" minlength="16" maxlength="16"/>
+                                <span class="form-error">В этом поле укажите ваш телефон в формате: <b>+7(XXX)XXX-XX-XX</b></span>
                             
                                
-                                <input class="form-input" type="text" placeholder="Ваш e-mail">
-                          
-                                <textarea class="form-textarea" rows="5" placeholder="Введите ваше сообщение"></textarea>
+                                <input class="form-input email" type="email" name="contacts_useremail" placeholder="Ваш e-mail">
+                                
+                                
+                                <textarea class="form-textarea" rows="5" name="contacts_usertext" placeholder="Введите ваше сообщение"></textarea>
                                 <button class="form-btn button wow heartBeat" type="submit">оставьте заявку</button>
 
                               
@@ -1005,20 +1010,25 @@
                 <h4 class="popup-header">Заинтересовало?</h4>
                 <p>Оставьте свои контактные данные <br> для связи</p>
                 <div class="form popup-form">
-                    <form action="#">
-                        
-                        <input class="form-input name" type="text" required placeholder="Ваше имя">
-                        
-                        <input class="form-input phone" type="text" required placeholder="Ваш телефон">
-                        
-                        <textarea class="form-input" rows="5" placeholder="Введите ваше сообщение"></textarea>
+                    <form class="modal_form" method="post" name="modal_form">
+                        <input class="form-input name" name="modal_username" type="text" required placeholder="Ваше имя">
+                        <input class="form-input phone" name="modal_userphone" type="tel" required placeholder="Ваш телефон" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{2}[\-]\d{2}" minlength="15" maxlength="15"/>
+                        <textarea class="form-input" name="modal_usertext" type="text" rows="5" placeholder="Введите ваше сообщение"></textarea>
                         <button class="form-btn button" type="submit">оставьте заявку</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    
+    <div class="popup-ok">
+        <div class="popup-dialog">
+            <div class="popup-content">
+                <button class="popup-ok_close">&times;</button>
+                <h4 class="popup-header">Спасибо!</h4>
+                <p>Ваша заявка отправлена, мы свяжемся с вами в ближайшее время</p>
+            </div>
+        </div>
+    </div>
     <!-- optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -1036,6 +1046,10 @@
 _   <!--fotorama slider-->
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!--JQ Validation-->
+	<script src="./js/jquery.validate.min.js">
+	</script>
     
     <!--wow js-->
     <script src="./js/wow.min.js"></script>
